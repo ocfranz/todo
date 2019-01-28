@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>To Do</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/main.css" />
+    
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <span class="title">To Do List</span>
+        </div>
+    </div>
+    <div class="todo-list">
+        <div class="container">
+            <div class="list">
+                <div class="card todo">
+                    <div class="card-head">
+                        <span class="list-title"> To Do</span>
+                        <a class="add-task"  onclick="addTask()">
+                            ADD TASK
+                        </a>
+                    </div>
+                    <div class="new-task" id="new-task">
+                        <input type="text" id="task" placeholder="New Task...">
+                    </div>
+                    <div class="tasks">
+                        <div class="item">
+                            <span class="task-des" id="task-des"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card doing">
+                    <div class="card-head">
+                        <span class="list-title"> Doing</span>
+                    </div>
+                    <div class="tasks">
+                        <div class="item">
+                            <span class="task-des" id="task-des"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card done">
+                    <div class="card-head">
+                        <span class="list-title"> Done</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
