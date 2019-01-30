@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>To Do</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/main.css" />
     
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/main.css" />
 </head>
 <body>
     <div class="header">
@@ -14,38 +15,65 @@
             <span class="title">To Do List</span>
         </div>
     </div>
-    <div class="todo-list">
+    <div class="todo">
         <div class="container">
-            <div class="list">
-                <div class="card todo">
-                    <div class="card-head">
-                        <span class="list-title"> To Do</span>
-                        <a class="add-task"  onclick="addTask()">
-                            ADD TASK
-                        </a>
-                    </div>
-                    <div class="new-task" id="new-task">
-                        <input type="text" id="task" placeholder="New Task...">
-                    </div>
-                    <div class="tasks">
-                        <div class="item">
-                            <span class="task-des" id="task-des"></span>
+            <div class="row">
+                <div class="col-md-4 task">
+                    <div class="task-content">
+                        <div class="task-header">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span >To DO</span>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <a onclick="launchAdd()" class="btn-add">
+                                        <img src="./src/media/add.png" alt="add" >
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-task text-center" id="new-task">
+                            <input type="text" id="task-des" placeholder="New task" autofocus="true" onkeypress="addTask(event)">
+                        </div>
+                        <div class="task-body" id="todo-body">
+
                         </div>
                     </div>
                 </div>
-                <div class="card doing">
-                    <div class="card-head">
-                        <span class="list-title"> Doing</span>
-                    </div>
-                    <div class="tasks">
-                        <div class="item">
-                            <span class="task-des" id="task-des"></span>
+                <div class="col-md-4 task">
+                    <div class="task-content">
+                        <div class="task-header">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span >Doing</span>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <span id="number-task">Total : 0</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="task-body" id="doing-body">
+                            
                         </div>
                     </div>
                 </div>
-                <div class="card done">
-                    <div class="card-head">
-                        <span class="list-title"> Done</span>
+                <div class="col-md-4 task">
+                    <div class="task-content">
+                        <div class="task-header">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span >Done</span>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <span id="number-task">Total : 0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="task-body" id="done-body">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
