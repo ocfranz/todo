@@ -23,7 +23,7 @@
                         <div class="task-header">
                             <div class="row">
                                 <div class="col-6">
-                                    <span >To DO</span>
+                                    <span >To Do</span>
                                 </div>
                                 <div class="col-6 text-right">
                                     <a onclick="launchAdd()" class="btn-add">
@@ -40,20 +40,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 task">
-                    <div class="task-content">
+                <div class="col-md-4 task" >
+                    <div class="task-content" id="doing">
                         <div class="task-header">
                             <div class="row">
                                 <div class="col-6">
                                     <span >Doing</span>
                                 </div>
                                 <div class="col-6 text-right">
-                                    <span id="number-task">Total : 0</span>
+                                   <span>Total :</span> <span id="number-task-doing">0</span>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="task-body" id="doing-body">
+                        <div class="task-body" id="doing-body" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false">
                             
                         </div>
                     </div>
@@ -77,6 +77,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="how-it-works">
+        <div class="container text-center">
+            <h4>How it Works</h4>
+            <p></p>
         </div>
     </div>
     <script src="./src/js/main.js"></script>
