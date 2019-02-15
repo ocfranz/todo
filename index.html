@@ -59,19 +59,19 @@
                     </div>
                 </div>
                 <div class="col-md-4 task">
-                    <div class="task-content">
+                    <div class="task-content" id="done">
                         <div class="task-header">
                             <div class="row">
                                 <div class="col-6">
                                     <span >Done</span>
                                 </div>
                                 <div class="col-6 text-right">
-                                    <span id="number-task">Total : 0</span>
+                                    <span>Total :</span> <span id="number-task-done">0</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="task-body" id="done-body">
+                        <div class="task-body" id="done-body" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false">
                             
                         </div>
                     </div>

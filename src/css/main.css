@@ -63,6 +63,11 @@ body{
 }
 
 
-.allowDrop{
+.allowDropDoing{
+    border:2px solid #449D44;
+}
+
+
+.allowDropDone{
     border:2px solid #449D44;
 }
