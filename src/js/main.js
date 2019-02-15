@@ -58,11 +58,13 @@ function addTask(event){
     if(input.value != ""){
         if(event.which == 13 ||event.keyCode == 13){
             var task = document.createElement("div");
-            task.innerHTML=
-                '<div class="task-main" id="task-item" draggable="true" ondragstart="drag(this, event)"><span>'+input.value+'</span></div>';
-    
+             var nodeString = '<div class="task-main" id="task-item" draggable="true" ondragstart="drag(this, event)">'
+                                    +'<span class="t-title"> <strong>'+input.value+'</strong></span><br>'
+                                    +'<span class="t-description">'+'Description'+'<span>'
+                                +'</div>';
+
+            task.innerHTML= nodeString;
             document.getElementById("todo-body").appendChild(task);
-            
             input.value = "";
             
         }

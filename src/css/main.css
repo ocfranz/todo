@@ -6,9 +6,7 @@ body, html{
 }
 body{
     background: #FBFDFD;
-    background-image: url('../media/background.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    
     font-family: 'Roboto Condensed', sans-serif;
 }
 .header{
@@ -24,6 +22,7 @@ body{
 .task-content{
     border: 1px solid #B5B5B5;
     padding: 1rem 1.5rem;
+    border-radius: 5px;
 }
 .task-header{
     border-bottom: 1px solid  #B5B5B5;
@@ -53,6 +52,15 @@ body{
     padding: 1rem 0 1rem 1rem;
     cursor:pointer;
     margin:0 0 .5rem 0;
+    border-radius: 5px;
+    color:#ffff ;
+    background-color:#865FC1 ;
+}
+.t-title{
+    font-size: 18px;
+}
+.t-description{
+    opacity: .8;
 }
 .how-it-works{
     margin: 5rem 0 0 0;
