@@ -54,7 +54,7 @@ function drop(target, event){
 }
 
 function addTask(event){
-    var input = document.getElementById("task-des");
+    var input = document.getElementById("task-title");
     if(input.value != ""){
         if(event.which == 13 ||event.keyCode == 13){
             var task = document.createElement("div");

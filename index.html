@@ -32,8 +32,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="new-task text-center" id="new-task">
-                            <input type="text" id="task-des" placeholder="New task" autofocus="true" onkeypress="addTask(event)">
+                        <div class="new-task text-left" id="new-task">
+                            <div class="new-task-content">
+                                <input type="text" id="task-title" placeholder="New task" autofocus="true" onkeypress="addTask(event)">
+                               
+                                <textarea name="t-description" id="task-description" cols="35" rows="2" placeholder="Description"></textarea>
+                            </div>
+                            
                         </div>
                         <div class="task-body" id="todo-body">
 
