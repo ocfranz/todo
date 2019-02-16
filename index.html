@@ -34,7 +34,7 @@
                         </div>
                         <div class="new-task text-left" id="new-task">
                             <div class="new-task-content">
-                                <input type="text" id="task-title" placeholder="New task" autofocus="true" onkeypress="addTask(event)">
+                                <input type="text" id="task-title" placeholder="New task" autofocus="true">
                                 <textarea name="t-description" id="task-description" cols="35" rows="2" placeholder="Description"></textarea>
                                 <div id="bg-selector">
                                     <div class="color" data-value="#00529c"></div>
@@ -42,6 +42,7 @@
                                     <div class="color" data-value="#4786FF"></div>
                                     <div class="color" data-value="#00529c"></div>
                                 </div>
+                                <button type="button" class="btn btn-primary" id="btn-save" onclick="addTask()">Save</button>
                             </div>
                             
                         </div>
