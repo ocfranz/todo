@@ -1,3 +1,4 @@
+
 function drag( container, event){
     event.dataTransfer.setData('Data', container.id);
     if(container.className == "task-main"){
@@ -54,22 +55,44 @@ function drop(target, event){
 }
 
 function addTask(event){
-    var input = document.getElementById("task-title");
-    if(input.value != ""){
+    var new_container = document.getElementById("new-task");
+    var t_title = document.getElementById("task-title");
+    var t_desc = document.getElementById("task-description");
+    var description = "No description";
+    if(t_title.value != "" ){
         if(event.which == 13 ||event.keyCode == 13){
+            if(t_desc.value != ""){
+                description = t_desc.value;
+            }
             var task = document.createElement("div");
-             var nodeString = '<div class="task-main" id="task-item" draggable="true" ondragstart="drag(this, event)">'
-                                    +'<span class="t-title"> <strong>'+input.value+'</strong></span><br>'
-                                    +'<span class="t-description">'+'Description'+'<span>'
+            var nodeString = '<div class="task-main" id="task-item" draggable="true" ondragstart="drag(this, event)">'
+                                    +'<span class="t-title"> <strong>'+t_title.value+'</strong></span><br>'
+                                    +'<span class="t-description">'+description+'<span>'
                                 +'</div>';
 
             task.innerHTML= nodeString;
             document.getElementById("todo-body").appendChild(task);
-            input.value = "";
-            
+            t_title.value = "";
+            t_desc.value = "";
+           
         }
     }
 }
 function launchAdd(){
     document.getElementById("new-task").classList.add("task-after");
+    loadColors();
 }
+
+
+function loadColors(){
+    var colors = document.getElementsByClassName("color");
+    
+    for(var i=0; i<colors.length; i++){
+        var color = colors[i].getAttribute("data-value");
+        console.log(color);
+        colors[i].style.backgroundColor = color;
+       
+    }
+    
+}
+

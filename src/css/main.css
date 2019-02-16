@@ -13,6 +13,8 @@ body{
     margin: 4rem 0 0 0;
     padding: 0 0 1rem 0;
 }
+
+
 .title{
     font-size: 25px;
 }
@@ -58,18 +60,30 @@ body{
 #task-description:focus{
     outline: 0;
 }
+#bg-selector{
+    border: 0;
+    padding: 10px 0 0 0 ;
+    margin: 0;
+}
+.color{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
 .task-after{
     display: block;
 }
 
 .task-main{
-    border: 1px solid #B5B5B5;
+   
     padding: 1rem 0 1rem 1rem;
     cursor:pointer;
     margin:0 0 .5rem 0;
     border-radius: 5px;
     color:#ffff ;
-    background-color:#865FC1 ;
+    background-color:rgb(134, 95, 193, .8) ;
 }
 .t-title{
     font-size: 17px;
@@ -77,6 +91,7 @@ body{
 }
 .t-description{
     opacity: .8;
+    font-size: 15px;
 }
 .how-it-works{
     margin: 5rem 0 0 0;

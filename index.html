@@ -6,13 +6,13 @@
     <title>To Do</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./src/css/main.css" />
 </head>
 <body>
     <div class="header">
         <div class="container">
-            <span class="title">To Do List</span>
+            <span class="title">To Do List</span>   
         </div>
     </div>
     <div class="todo">
@@ -35,8 +35,13 @@
                         <div class="new-task text-left" id="new-task">
                             <div class="new-task-content">
                                 <input type="text" id="task-title" placeholder="New task" autofocus="true" onkeypress="addTask(event)">
-                               
                                 <textarea name="t-description" id="task-description" cols="35" rows="2" placeholder="Description"></textarea>
+                                <div id="bg-selector">
+                                    <div class="color" data-value="#00529c"></div>
+                                    <div class="color" data-value="#9E7FCD"></div>
+                                    <div class="color" data-value="#4786FF"></div>
+                                    <div class="color" data-value="#00529c"></div>
+                                </div>
                             </div>
                             
                         </div>
@@ -84,12 +89,7 @@
             </div>
         </div>
     </div>
-    <div class="how-it-works">
-        <div class="container text-center">
-            <h4>How it Works</h4>
-            <p></p>
-        </div>
-    </div>
+    
     <script src="./src/js/main.js"></script>
 </body>
 </html>
