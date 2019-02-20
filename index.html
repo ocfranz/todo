@@ -26,21 +26,21 @@
                                     <span >To Do</span>
                                 </div>
                                 <div class="col-6 text-right">
-                                    <a onclick="launchAdd()" class="btn-add">
-                                        <img src="./src/media/add.png" alt="add" >
+                                    <a onclick="launchAdd()" class="btn-add" >
+                                        <img src="./src/media/add.png" alt="add" id="btn-image">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="new-task text-left" id="new-task">
-                            <div class="new-task-content">
+                            <div class="new-task-content" id="new-task-content">
                                 <input type="text" id="task-title" placeholder="New task" autofocus="true">
                                 <textarea name="t-description" id="task-description" cols="35" rows="2" placeholder="Description"></textarea>
                                 <div id="bg-selector">
-                                    <div class="color" data-value="#00529c"></div>
-                                    <div class="color" data-value="#9E7FCD"></div>
-                                    <div class="color" data-value="#4786FF"></div>
-                                    <div class="color" data-value="#00529c"></div>
+                                    <div class="color" data-value="#17A2B8" id="blue"></div>
+                                    <div class="color" data-value="#28A745" id="purple"></div>
+                                    <div class="color" data-value="#DC3545" id="green"></div>
+                                    <div class="color" data-value="#FFC107" id="orange"></div>
                                 </div>
                                 <button type="button" class="btn btn-primary" id="btn-save" onclick="addTask()">Save</button>
                             </div>
